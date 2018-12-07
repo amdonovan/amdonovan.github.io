@@ -26,25 +26,33 @@
         
     </div>
     
-    <div class="grid_parent"> 
+    <div id="grid"> 
         
         <div class="Home_feature">
     
-            <img src="Images/jeremy-vessey-373599-unsplash.jpg" id="carousel">
+            <img src="Images/HomeHeader.png">
     
             <p id="Main_Feature">Into the Void</p>
     
-            <p id="Main_Description">A fantastical novel in progress. The story follows Lucija, a young woman from  another world, as she searches for her kidnapped boyfriend, Ryan, with the help of his brother, Lou. Transcending reality, it quickly becomes clear that the whereabouts of Ryan are less of a mystery than they had appeared.</p>
+            <p id="Main_Description">A fantastical novel in progress. The story follows Lucija, <br/> a young woman from  another world, as she searches for her<br/> kidnapped boyfriend, Ryan, with the help of his brother, Lou.<br/> Transcending reality, it quickly becomes clear that the<br/> whereabouts of Ryan are less of a mystery than they<br/> had appeared.</p>
     
         </div>
+<!--
+        
+        <ul id= "home_nav">
+                <li>Poetry</li>
+                <li>Essays</li>
+                <li>Short Stories</li>
+        </ul>
+-->
         
         <div class="home_nav">
         
-            <p>Poetry</p>
+            <p id="poetry">Poetry</p>
             
-            <p>Essays</p>
+            <p id="essays">Essays</p>
             
-            <p>Short Stories</p>
+            <p id="stories">Short Stories</p>
         
         </div>
         
@@ -118,35 +126,183 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+ 
     
-    .disable-select{
-        
-    }
     
+body{
+     margin: 2em;
+                
+            }
+            
 
-.grid_parent{
-        
-        display:grid;
+    
+    #grid{
+    display:grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
         grid-gap: 1em;
         grid-auto-rows: minmax(200px, auto);
         grid-auto-columns: minmax(300,auto);
-        
-        }
+            }    
     
-    .home_feature {
-        
-    }
     
-    #carousel{
-        display: block;
+    #nav{
+        list-style: none;
+        text-align: right;
+        position: fixed;
+        float: right;
+        top: 15px;
         width: 100%;
-/*
-        grid-column: 5/5;
-        grid-row: 3/3; 
-*/
+        color: black;
+        overflow: hidden;
+        font-family: Lato;
+        font-size: 10px;
+        font-weight: lighter;
+        font-style:normal;
+        right: 3em;
+/*        background-color: white;*/
+        
     }
+    
+    #nav li{
+        display: inline;
+    }
+    
+    #nav li a{
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        width: 100%;
+    } 
+    
+    
+    .title{
+        color: black;
+        background-color: white;
+        text-align: left;
+        font-family: "Miller Banner";
+        font-style:italic;
+        font-size: 11px;
+        font-weight:600;
+        position: fixed;
+        float: left;
+        left: 3em;
+        top: 15px;
+        padding:inherit;
+    }
+    
+    
+   
+    
+    .Home_feature{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start:1;
+        grid-row-end: 3;    
+        margin: 1em 2em 1em 0em;
+    }
+    
+   
+    
+    img{
+        width: 100%;
+        margin: 10px 0px 10px 0px
+    }
+    
+    #Main_Feature{
+        font-family: "Miller Banner";
+        font-style: italic;
+        font-weight:900;
+        font-size: 40px;
+        color: white;
+        position: relative;
+        left: 1em;
+/*        grid-column: start/middle;*/
+        top: -200px;
+        
+    }
+    
+    
+    
+    #Main_Description {
+        font-family: lato;
+        font-size: 12px;
+        color: white;
+/*        grid-column: start;*/
+        position: relative;
+        left: 5em;
+        top: -200px;
+        
+        
+    }
+    
+    
+    .home_nav{
+        display: inline;
+        font-family: "Miller Banner";
+        font-style:italic;
+        font-weight:900;
+        font-size: 40px;
+        position: relative;
+        top: -30px;
+        grid-column:1/6;
+        grid-row: 3;
+        top: -150px;
+        
+
+    }
+    
+    #home_nav li{
+        display: inline;
+        position: relative;
+        background-color: #e7e7e9;
+        margin: 10px 10px 10px 0px;
+        text-align: center;
+        
+        
+    }
+    
+    
+    #poetry {
+/*        position: relative;*/
+/*        height:300px;*/
+        width:300px;        
+/*        position: relative;*/
+        background-color: #e7e7e9;
+/*        grid-column: start;*/
+/*        grid-row: center;*/
+        margin: 10px 10px 10px 0px;
+        padding: 127px 0px 127px 0px;
+        text-align: center;
+        top: 0px;
+        grid-column-start:1;
+        grid-column-end: 3;
+/*
+        grid-column: 3fr;
+        grid-row: 2;
+*/
+        
+    }
+    
+    #essays {
+        width:300px;        
+        position: relative;
+        background-color: #e7e7e9;
+        margin: 10px 10px 10px 0px;
+        padding: 127px 0px 127px 0px;
+        text-align: center;
+        top: 0px;
+        grid-column 3;
+/*
+        grid-column: 2;
+        grid-row: 2;
+*/
+        
+    }
+    
+    
+    
+    
+    
+    
