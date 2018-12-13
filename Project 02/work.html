@@ -67,11 +67,11 @@
               
               
     #grid{
-        display:grid;
-        grid-template-columns: repeat(5, 1fr);
+        display:inline-grid;
+        grid-template-columns: auto auto auto auto auto
         grid-gap: 1em;
         grid-auto-rows: minmax(200px, auto);
-        grid-auto-columns: minmax(300,auto);
+/*        grid-auto-columns: minmax(300,auto);*/
             }    
         
     #nav{
@@ -113,7 +113,6 @@
      
         
     .title{
-        color: black;
         background-color: white;
         text-align: left;
         font-family: "MillerBanner";
@@ -132,7 +131,7 @@
     #works{
         list-style: none;
 /*        text-align: right;*/
-        position: fixed;
+        position: relative;
         float: left;
         top: 100px;
         width: 100%;
@@ -141,19 +140,21 @@
         font-family: Lato;
         font-size: 10px;
         font-weight: 400;
-        font-style:normal;      
+        font-style:normal; 
+        grid-column: 1/2;
               }
               
               
     #works li{
-        display: inline;   
+        display: inline;
+        padding: 10px;
+/*        position: relative;*/
               }
               
     #works li a{
         color: #ada8b4;
         text-decoration: none;
-        padding: 10px;
-        background-color: white;         
+        background-color: white;
               }
               
     #works li a:hover{
@@ -165,11 +166,12 @@
               }
               
     .feature img{
-        position: fixed;
-        width:900px;
-        top: 140px;
+        position: relative;
+        width:100%;
+/*        top: 140px;*/
         left: 4em;
-        grid-column: 1/4;
+        grid-column: 1 / span 3;
+       
               }
               
     
