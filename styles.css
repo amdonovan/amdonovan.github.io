@@ -1,0 +1,278 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 50px 20px auto auto auto;
+    grid-gap: 10px;
+    padding: 10px
+}
+
+
+.grid-container > div{
+    text-align: left;
+    padding: 10px;
+}
+
+#nav{
+    list-style: none;
+    text-align: right;
+    position: fixed;
+    float: right;
+    top: 25px;
+    width: 100%;
+    color: black;
+    overflow: hidden;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: lighter;
+    font-style:normal;
+    right: 3em;
+    /*        background-color: white;*/
+
+}
+
+#nav li{
+    display: inline;
+}
+
+#nav li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+} 
+
+
+#nav li a:hover{
+    color: #c57c2b;
+}
+
+
+
+.title{
+    background-color: white;
+    text-align: left;
+    font-family: "MillerBanner";
+    font-style:italic;
+    font-size: 18px;
+    font-weight:900;
+    color: #302839;
+    position: fixed;
+    float: left;
+    left: 3em;
+    top: 5px;
+    padding:inherit;
+}
+
+
+.item1{
+    list-style: none;
+    position: relative;
+    grid-row-start: 2;
+    grid-row-end:3;
+    font-family: lato;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 70px 0px 0px 0px;
+
+}
+
+.item1 li{
+    display: inline;
+    padding: 10px
+}
+
+.item1 li a{}
+
+.item2{
+    grid-row: 2;
+    padding: 20px;
+    font-family: lato;
+    font-size: 10px;
+}
+
+.item2 img{
+    width: 60%;
+}
+
+.item2 h1{
+    font-family: millerbanner;
+    font-style:italic;
+
+}
+
+
+#Main_Feature{
+    font-family:"MillerBanner";
+    font-style: italic;
+    font-size: 60pt;
+    font-weight: bolder;
+    color: white;
+    position: relative;
+    top:-300px;
+    left: .5em;
+
+}
+
+
+#Main_Description{
+    font-family:lato;
+    font-size: 12px;
+    color: white;
+    position: relative;
+    top: -390px;
+    left: 1.5em;
+    margin: 20px;
+}
+
+
+#poetry{
+    font-family: "MillerBanner";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 60px;
+    background-color:#e7e7e9;
+    width: 300px;
+    color: #302839;
+    text-align: center;
+    padding: 127px 80px 127px 80px;
+    position: relative;
+    top: -200px;
+    left: 10px;
+    display: inline;
+    margin: 15px 60px 10px 40px
+}   
+
+
+#essays{
+    font-family: "MillerBanner";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 60px;
+    background-color:#e7e7e9;
+    width: 300px;
+    color:#302839;
+    text-align: center;
+    padding: 127px 80px 127px 80px;
+    position: relative;
+    top: -200px;
+    left: 10px;
+    display: inline;
+    margin: 0px 40px 0px 40px
+}
+
+
+#stories{
+    font-family: "MillerBanner";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 60px;
+    background-color:#e7e7e9;
+    width: 300px;
+    color: #302839;
+    text-align: center;
+    padding: 127px 80px 127px 80px;
+    position: relative;
+    top: -200px;
+    left: 10px;
+    display: inline;
+    margin: 0px 40px 0px 40px;
+
+}
+
+#view{
+    font-family: lato;
+    color: #939393;
+    border: 2px solid #bdbdbd;
+    text-align: center;
+    width: 135px;
+    padding: 12px 0px 12px 0px; 
+    margin: auto;
+    position: relative;
+    top: -30px;
+}
+
+
+#view a{
+    color: #939393;
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+}
+
+#view a:hover{
+    color:#c57c2b;
+
+}
+
+
+#biopic{
+    width: 900px;
+    display: inline;
+    margin: 100px 0px 0px 0px;
+
+}
+
+
+.bio{
+    width: 400px;
+    position: relative;
+    float: right;
+    margin: 0px 6em 15px 0px 
+}
+
+
+#bio_title {
+    position: relative;
+    width: 350px;
+    font-family: MillerBanner;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30pt;
+    display: inline;
+    top: 100px;
+    color: #302839;
+    /*            left: 0px;*/
+
+
+}
+
+#bio_copy {
+    position: relative;
+    width: 100%;
+    font-family: lato;
+    font-size: 11pt;
+    line-height: 13pt;
+    font-weight:300;
+    display: inline;
+    float:right;
+    text-align: left;
+    top: 100px;
+    margin: 10px 0px 30px 0px
+
+}
+
+#resume{
+    font-family: lato;
+    color: #939393;
+    border: 2px solid #bdbdbd;
+    text-align: center;
+    width: 135px;
+    padding: 12px 0px 12px 0px; 
+    margin: auto;
+    position: relative;
+    top: 80px;
+}
+
+#resume a{
+    color: #939393;
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+}
+
+#resume a:hover{
+    color:#c57c2b;
+
+}

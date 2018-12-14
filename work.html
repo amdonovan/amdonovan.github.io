@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+    <head> 
+    
+        <title>M P Mason Writing Portfolio</title> 
+    
+    </head>
+    
+<body> 
+    
+   
+    <div class="title">
+        
+        <p>Melissa Mason | Writing Portfolio</p>
+        
+        <ul id = nav>
+     
+            <li><a href="mpmasonportfolio.index.html">HOME</a></li>
+                
+            <li><a href="work.html">WORK</a></li>
+                
+            <li><a href="aboutme.html">CONTACT</a></li>
+                
+        </ul>   
+        
+    </div>
+    
+    
+    
+<div id="grid">
+    
+    
+    <ul id=works>
+        
+     <li>ALL</li>
+     <li>POETRY</li>
+     <li>ESSAYS</li>
+     <li>SHORT STORIES</li>
+  
+    </ul>    
+        
+  
+    <div class=feature> 
+        
+       <img src="Images/463887_774750ffd93e4aa0910941810e34a5a6~mv2_d_4368_2904_s_4_2.jpg">
+     
+    </div>
+  
+    </div>
+    
+    
+    </body>
+</html>
+        
+
+
+
+
+
+
+<style type="text/css">
+        
+    body{
+        margin: 1em;
+        }
+              
+              
+    #grid{
+        display:inline-grid;
+        grid-template-columns: auto auto auto auto auto
+        grid-gap: 1em;
+        grid-auto-rows: minmax(200px, auto);
+/*        grid-auto-columns: minmax(300,auto);*/
+            }    
+        
+    #nav{
+        list-style: none;
+        text-align: right;
+        position: fixed;
+        float: right;
+        top: 25px;
+        width: 100%;
+        color: black;
+        overflow: hidden;
+        font-family: Lato;
+        font-size: 10px;
+        font-weight: 400;
+        font-style:normal;
+        right: 3em;
+        }
+        
+        
+        
+    #nav li{
+        display: inline;
+    }
+    
+        
+        
+    #nav li a{
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        width: 100%;
+    } 
+        
+        #nav li a:hover{
+            color: #c57c2b;
+        }
+    
+     
+        
+    .title{
+        background-color: white;
+        text-align: left;
+        font-family: "MillerBanner";
+        font-style:italic;
+        font-size: 18px;
+        font-weight:900;
+        color: #302839;
+        position: fixed;
+        float: left;
+        left: 3em;
+        top: 5px;
+        padding:inherit;
+    }
+              
+    
+    #works{
+        list-style: none;
+/*        text-align: right;*/
+        position: relative;
+        float: left;
+        top: 100px;
+        width: 100%;
+        color: black;
+        overflow: hidden;
+        font-family: Lato;
+        font-size: 10px;
+        font-weight: 400;
+        font-style:normal; 
+        grid-column: 1/2;
+              }
+              
+              
+    #works li{
+        display: inline;
+        padding: 10px;
+/*        position: relative;*/
+              }
+              
+    #works li a{
+        color: #ada8b4;
+        text-decoration: none;
+        background-color: white;
+              }
+              
+    #works li a:hover{
+        color: #c57c2b;          
+              }
+              
+    #works li a:active{
+        color:#c57c2b
+              }
+              
+    .feature img{
+        position: relative;
+        width:100%;
+/*        top: 140px;*/
+        left: 4em;
+        grid-column: 1 / span 3;
+       
+              }
+              
+    
+        
